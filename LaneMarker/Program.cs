@@ -255,7 +255,7 @@
                 .SetTooltip("This will be said in team chat");
             Menu.AddItem(new MenuItem("JungleText", "Jungle text").SetValue(new StringList(SayText[3])))
                 .SetTooltip("This will be said in team chat");
-            Menu.AddItem(new MenuItem("delay", "Delay").SetValue(new Slider(300, 300, 2000)))
+            Menu.AddItem(new MenuItem("delay", "Delay").SetValue(new Slider(0, 0, 2000)))
                 .SetTooltip("Add delay before picking/marking if it's not working");
 
             selectedLane = Menu.Item("defaultLane").GetValue<StringList>().SelectedIndex;
